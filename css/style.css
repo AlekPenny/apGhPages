@@ -1,95 +1,303 @@
 body {
-
+  margin: 0;
+  padding: 0;
+  background-color: #070c24;
+  color:aliceblue;
+  min-height: 100vh;
   }
+
 
 /****************   Nav Section **********************/
 nav {
-	
+	background-color: #002455;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position:sticky;
+  top:0;
+  margin-top: 0;
+
+}
+
+nav p {
+  margin-left: 3em;
+  margin-bottom: 6px;
+  margin-top: 4px;
+  color:#d6bb76;
+  font-size: x-large;
+  font-family:"PT Sans", sans-serif;
+  font-weight: 500;  
+}
+
+nav a {
+  color: #ebdfc5;
+  font-size: larger;
+  margin-right: 3em;
+  font-family:"PT Sans", sans-serif;
+  font-weight: 500;
+  
+}
+
+nav a:hover {
+  color:#d6bb76;
 }
 
 /***********************  Footer Section   **************************/
 footer {
-	
+	background-color: #002455;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position:sticky;
+  bottom:0;
+  margin-bottom: 0;
+}
+
+footer a {
+  color:aliceblue;
+  margin-left: 2em;
+  font-size: 1.5em;
 }
 
 /*********** Splash Page ************************/
 header {
-
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header h1 {
-  
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family:"PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  color:#d6bb76;
+  font-size: 3rem;
 }
 
 header img {
+  border-color: #d6bb76;
+  border: 3px solid #f0e6ce;
+  border-radius: 45%;
 }
 
 .address {
- 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:"PT Sans", sans-serif;
+  font-weight: 500;
+  font-style: oblique;
 }
 
 .tagline {
-  
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-family:"PT Sans", sans-serif;
+  font-weight: 500;
 }
 
 /************* Sections ********************/
 hr {
+  color:#d6bb76;
+}
 
+section h2 {
+  font-family:"PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 section h3 {
-  
+  font-family:"PT Sans", sans-serif;
+  font-weight: 500;
 }
 
 section dl {
-  
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: max-content 3fr;
+  font-family:"PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: oblique;
+}
+
+.containers {
+  display: flex;
+  justify-content: center;
+  gap: 10em;
 }
 
 section ul {
-
+  margin-top: 5px;
+  font-family:"PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: oblique;
+  padding-left: 26px;
 }
 
 section a {
-
+  color: #ebdfc5;
+  text-decoration: none;
 }
 
 section a:hover {
+  text-decoration: underline;
+  color:#d6bb76;
 }
 
 /**************   Projects   *****************/
 .three-col {
-	
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: clamp(1vw, 4vw, 15vw);
+  max-width: 9em;
+  margin: 0 auto;
 }
 
-.card img {
+.projects-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:"PT Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  font-size: 1.5em;
 
 }
 
-.card {
+.three-col ul {
+  margin-top: 5px;
+  font-family:"PT Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  padding-left: 26px;
+  max-width: 500px;
+  flex-wrap: wrap;
   
 }
 
+.card img {
+  box-shadow: 2px 2px 2px 2px #0d1647;;
+  transition: 0.3s;
+  max-width: 85%;
+}
+
+.card {
+  background-color:#d6bb76;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 16px;
+  margin-left: 3vw;
+  margin-bottom: 120px;
+  color:black;
+  text-shadow: 
+    1px 1px 0 aliceblue;
+  paint-order: stroke fill;
+  outline: 2px solid aliceblue;
+}
+
+.card h3 {
+  display: flex;
+  font-size: x-large;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  font-family:"PT Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #070c24;
+}
+
+.card ul {
+  margin-top: .5vw;
+  font-size: large;
+  width: 1200px;
+}
+
 /**************   Responsiveness   *****************/
-@media (max-width: 680px) {
+@media (max-width: 960px) {
+
+      .three-col {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 1em;
+    }
+
     nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       
     }
 
-    .three-col {
-      
+    nav a {
+      margin-right: 0em;
+    }
+
+    nav p {
+      margin-left: 0em;
+    }
+
+
+    .card {
+      margin-bottom: 1.5em;
     }
 }
 
 /**************   Contact Page   *****************/
 .one-col {
-
+  max-width: 20em;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
 }
 
 input {
-  
-
+  width: 30em;
+  margin-bottom: 1em;
 }
 
 textarea {
-   
+  width: 31em;
+  margin-bottom: 1em;
+}
+
+button {
+  width: 15em;
+  height: 3em;
+  margin-bottom: 2em;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: .5em;
+  margin-bottom: 10px;
+  font-family:"PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  color:#d6bb76;
+  font-size: 3rem;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  font-family:"PT Sans", sans-serif;
+  font-weight: 500;
+  font-style: oblique;
 }
