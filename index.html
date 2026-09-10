@@ -8,7 +8,9 @@
     <script src="https://kit.fontawesome.com/850a1a3ce4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Wellfleet&display=swap" rel="stylesheet">
+
+
 
 </head>
 
@@ -19,57 +21,94 @@
     </nav>
     <header>
         <h1> Aleksander Penny</h1>
-        <img src="images/apHeadshot.jpg" alt="A headshot image of Aleksander Penny" width="340" height="340">
+        <img src="images/apHeadshot.jpg" alt="A headshot image of Aleksander Penny" width="240" height="240">
     </header>
-    <p class="address"> 137 Tally Cove Rd, Jasper, GA 30143 &block; 813-525-0620 &block; alekpenny1@aol.com</p>
+    <p class="address"> 137 This Place, Your House, 4242564 &block; 813-525-0620 &block; alekpenny1@aol.com</p>
     <p class="tagline"> A college Computer Science student who's extremely interested in Game Dev, TTRPG's, Art, Music, and every combination of each!</p>
     <hr>
 
-    <div class="containers">
-        <section>
-            <h2>Education</h2>
-            <dl>
-                <dt>University of Georgia</dt>
-                <dd>3.33 GPA</dd>
-                <dt>Bachelor in Computer Science</dt>
-                <dd>Dec 2026</dd>
-            </dl>
-        </section>
+<div class="card-carousel-container">
 
-        <section>
-            <h2>Honors and Awards</h2>
-            <dl>
-                <dt>Zell Miller Scholarship</dt>
-                <dd>2023-2026</dd>
-                <dt>Dean's List</dt>
-                <dd>2025</dd>
-            </dl>
-        </section>
+    <!-- MUST BE HERE: Sibling to the slider window -->
+    <input type="radio" name="carousel-control" id="slide-1" checked>
+    <input type="radio" name="carousel-control" id="slide-2">
+    <input type="radio" name="carousel-control" id="slide-3">
+    <input type="radio" name="carousel-control" id="slide-4">
 
-        <section>
-            <h2>Skills</h2>
+    <!-- The slider window wrapper -->
+    <div class="card-slider-window">
+    <div class="card-slider-track">
+
+    <div class="card1">
+    <div class="card-inner">
+        <div class="card-content">
+        <h2>Education</h2>
             <ul>
-                <li>Java(Script)</li>
-                <li>C(++)</li>
-                <li>HTML/CSS</li>
-                <li>SQL</li>
-                <li>Python</li>
-                <li>GDScript</li>
+            <li>University of Georgia</dt>
+            <li>Bachelor in Computer Science</dt>
+            <li>Expected Dec 2026</li>
             </ul>
-        </section>
-
-        <section>
-            <h2>Experience</h2>
-            <dl>
-                <dt><a href="https://walmart.com">Stocking Team Associate at Walmart</a></dt>
-                <dd>2025</dd>
-                <dt>Volunteer at The Pantry Hamilton Mill UMC</dt>
-                <dd>2023</dd>
-                <dt>Teaching Assistant in UGA Project FOCUS</dt>
-                <dd>2025</dd>
-            </dl>
-        </section>
+        </div>
     </div>
+    <div class="arrow-controls">
+        <label for="slide-4" class="prev-arrow">&#10094;</label>
+        <label for="slide-2" class="next-arrow">&#10095;</label>
+    </div>
+    </div>
+
+    <div class="card1">
+    <div class="card-inner">
+        <div class="card-content">
+        <h2>Honors and Awards</h2>
+            <ul>
+            <li>Zell Miller Scholarship</dt>
+                <li>(Full Tuition)</li>
+            <li>Dean's List - 2025</dt>
+            </ul>
+        </div>
+    </div>
+    <div class="arrow-controls">
+        <label for="slide-1" class="prev-arrow">&#10094;</label>
+        <label for="slide-3" class="next-arrow">&#10095;</label>
+    </div>
+    </div>
+
+    <div class="card1">
+    <div class="card-inner">
+        <div class="card-content">
+        <h2>Skills</h2>
+        <p>Java(Script) - C(++) - Python</p>
+        <p>HTML/CSS - SQL - GDScript</p>
+        </div>
+    </div>
+    <div class="arrow-controls">
+        <label for="slide-2" class="prev-arrow">&#10094;</label>
+        <label for="slide-4" class="next-arrow">&#10095;</label>
+    </div>
+    </div>
+
+    <div class="card1">
+        <div class="card-inner">
+            <div class="card-content">
+                <div class="last-card"> 
+                    <h2>Experience</h2>
+                        <ul>
+                            <li><a href="https://walmart.com">Stocking Team Associate at Walmart - 2023</a></dt>
+                            <li>Volunteer at The Pantry Hamilton Mill UMC - 2025</dt>
+                            <li>Teaching Assistant in UGA Project FOCUS  - 2025</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <div class="arrow-controls">
+            <label for="slide-3" class="prev-arrow">&#10094;</label>
+            <label for="slide-1" class="next-arrow">&#10095;</label>
+        </div>
+    </div>
+
+        </div>
+    </div>
+</div>
 
     <hr>
 
@@ -118,7 +157,7 @@
     </div>
 
     <footer>
-    <a href="contact.html">&copy; Alek Penny</a>
+    <a href="contact.html">&copy; Aleksander Penny</a>
     <a href="https://www.linkedin.com/in/aleksander-penny-75627a433/" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-linkedin"></i>
     </a>
